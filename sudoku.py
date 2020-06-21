@@ -10,7 +10,7 @@ Sudoku Solver
 
 """
 
-#import numpy as np
+import numpy as np
 
 grid = [[5,3,0,0,7,0,0,0,0],
         [6,0,0,1,9,5,0,0,0],
@@ -21,8 +21,6 @@ grid = [[5,3,0,0,7,0,0,0,0],
         [0,6,0,0,0,0,2,8,0],
         [0,0,0,4,1,9,0,0,5],
         [0,0,0,0,8,0,0,0,0]]
-
-#print(np.matrix(grid))
 
 #def possible(y,x,n):
 #    global grid
@@ -120,12 +118,9 @@ def find_empty(bo):
             if bo[i][j] == 0:
                 return(i,j) #(row,column)
     return None
-                
-print_board(grid)
+
+
+print(np.matrix(grid))
 solve(grid)
 print('*******************')     
-print_board(grid)
-
-    
-        
-
+print(np.matrix(grid))
